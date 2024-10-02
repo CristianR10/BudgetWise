@@ -1,0 +1,29 @@
+{
+  "name": "budget-wise-back",
+  "version": "1.0.0",
+  "description": "Controlador de metricas",
+  "main": "server.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --import=tsx --watch ./src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CristianR10/BudgetWise.git"
+  },
+  "author": "Cristian Renato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristianR10/BudgetWise/issues"
+  },
+  "homepage": "https://github.com/CristianR10/BudgetWise#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "helmet": "^8.0.0"
+  }
+}
