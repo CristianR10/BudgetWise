@@ -1,18 +1,10 @@
-import express from 'express'
+import { Router } from 'express';
+import { getDividas, createDivida, updateDivida } from '../controllers/dividaController';
 
-const router = express.Router();
+const router: Router = Router();
 
-// Como criar uma rota estatica
-// router.get('/teste', (req, res) => {    
-//     res.json({ cristian: true })
-// })
-
-
-router.get('/', (req, res) => {
-    let name = "cris"
-    let age = 31
-
-    res.json({ name, age })
-})
+router.get('/dividas', getDividas);
+router.post('/dividas', createDivida);
+router.put('/dividas/:id', updateDivida);
 
 export default router;
